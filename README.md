@@ -1,11 +1,9 @@
-# Boilerplate Code for Typescript with Vue.js 3 Course
+# Vuejs 3 Journal Application with TypeScript Support
 
-This is the boilerplate code for the TypeScript with Vue.js 3 Course.
+TypeScript and Composables with reactive state and the Composition API in a single-page application. 
 
-## How to Install
-```sh
-npx degit vueschool/ts-vue-boilerplate 
-```
+## Installation
+
 ```sh
 npm install
 npm run dev
