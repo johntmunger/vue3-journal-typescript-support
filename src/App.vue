@@ -2,9 +2,21 @@
 import TheHeader from "@/components/TheHeader.vue";
 import EntryEditor from "./components/EntryEditor.vue";
 import EntryCard from "@/components/EntryCard.vue";
+import type User from "@/types/User";
+
+import { reactive } from "vue";
+
+const user: User = reactive({
+  id: 1,
+  username: "danielkelly_io",
+  settings: [],
+});
+
+console.log(user.id);
 </script>
 
 <template>
+  {{ user.username }}
   <main class="container m-auto p-10">
     <TheHeader />
     <EntryEditor />
