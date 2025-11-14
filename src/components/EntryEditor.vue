@@ -12,7 +12,7 @@ const charCount = computed(() => body.value.length);
 const maxChars = 280;
 
 //events
-defineEmits<{
+const emit = defineEmits<{
   (e: "@create", entry: Entry): void;
 }>();
 
@@ -25,22 +25,24 @@ const handleTextInput = (e: Event) => {
     body.value = textarea.value = textarea.value.substring(0, maxChars);
   }
 };
+
+const handleSubmit = () => {
+  const newEntry: Entry = {
+    id: Date.now(),
+    body: body.value,
+    emoji: emoji.value,
+    createdAt: new Date(),
+    userId: 1, // assuming a static user for this example
+  };
+  emit("@create", newEntry);
+  // reset form
+  body.value = "";
+  emoji.value = null;
+};
 </script>
 
 <template>
-  <form
-    id="entry-form"
-    class="entry-form"
-    @submit.prevent="
-      $emit('@create', {
-        body: body,
-        emoji,
-        createdAt: new Date(),
-        userId: 1,
-        id: Math.random(),
-      })
-    "
-  >
+  <form id="entry-form" class="entry-form" @submit.prevent="handleSubmit()">
     <textarea
       :value="body"
       @keyup="handleTextInput"

@@ -4,7 +4,7 @@ import EntryEditor from "./components/EntryEditor.vue";
 import EntryCard from "@/components/EntryCard.vue";
 
 // import type User from "@/types/User";
-// import { reactive } from "vue";
+import { reactive } from "vue";
 
 import Entry from "./types/Entry";
 
@@ -14,8 +14,10 @@ import Entry from "./types/Entry";
 //   settings: [],
 // });
 
+const entries: Entry[] = reactive([]);
+
 const handleCreateEntry = (entry: Entry) => {
-  console.log("New entry created :", entry);
+  entries.unshift(entry);
 };
 </script>
 
@@ -24,7 +26,7 @@ const handleCreateEntry = (entry: Entry) => {
     <TheHeader />
     <EntryEditor @@create="handleCreateEntry" />
     <ul>
-      <li>
+      <li v-for="entry in entries" :key="entry.id">
         <EntryCard />
       </li>
     </ul>
