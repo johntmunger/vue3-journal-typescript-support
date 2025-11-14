@@ -1,8 +1,12 @@
 # Vuejs 3 Application with TypeScript Support
 
-Simple journal application using TypeScript and Composables with reactive state and the Composition API. How to type reactive data, refs, props, custom events, event handlers, DOM elements, template refs, data from provide/inject.
+MVP journal application using TypeScript and Composables with reactive state and the Composition API. How to type reactive data, refs, props, custom events, event handlers, DOM elements, template refs, data from provide/inject.
 
-## Installation
+## Online Demo 
+
+- Check out a [quick url demo ]([https://www.codecademy.com/resources/docs](https://jm-typescript-journal-app.netlify.app/)).
+
+## Coding Installation
 
 ```sh
 npm install
