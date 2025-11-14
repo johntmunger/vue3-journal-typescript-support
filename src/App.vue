@@ -12,7 +12,7 @@ const entries: Entry[] = reactive([]);
 
 const user: User = reactive({
   id: 1,
-  username: "danielkelly_io",
+  username: "john_munger",
   settings: [],
 });
 
