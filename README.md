@@ -1,6 +1,6 @@
 # Vuejs 3 Application with TypeScript Support
 
-Simple journal application using TypeScript and Composables with reactive state and the Composition API. 
+Simple journal application using TypeScript and Composables with reactive state and the Composition API. How to type reactive data, refs, props, custom events, event handlers, DOM elements, template refs, data from provide/inject.
 
 ## Installation
 
