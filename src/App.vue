@@ -2,18 +2,19 @@
 import TheHeader from "@/components/TheHeader.vue";
 import EntryEditor from "./components/EntryEditor.vue";
 import EntryCard from "@/components/EntryCard.vue";
-import type User from "@/types/User";
 
-import { reactive } from "vue";
-import Emoji from "./types/Emoji";
+// import type User from "@/types/User";
+// import { reactive } from "vue";
 
-const user: User = reactive({
-  id: 1,
-  username: "danielkelly_io",
-  settings: [],
-});
+import Entry from "./types/Entry";
 
-const handleCreateEntry = (entry: { text: string; emoji: Emoji | null }) => {
+// const user: User = reactive({
+//   id: 1,
+//   username: "danielkelly_io",
+//   settings: [],
+// });
+
+const handleCreateEntry = (entry: Entry) => {
   console.log("New entry created :", entry);
 };
 </script>
