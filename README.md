@@ -2,9 +2,9 @@
 
 MVP journal application using TypeScript and Composables with reactive state and the Composition API. How to type reactive data, refs, props, custom events, event handlers, DOM elements, template refs, data from provide/inject.
 
-## Online Demo 
+## Online Demo
 
-- Check out a [quick url demo ]([https://www.codecademy.com/resources/docs](https://jm-typescript-journal-app.netlify.app/)).
+- Check out a [ url demo ](<[https://www.codecademy.com/resources/docs](https://jm-typescript-journal-app.netlify.app/)>) hosted on netlify.
 
 ## Coding Installation
 
