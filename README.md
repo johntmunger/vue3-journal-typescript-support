@@ -4,7 +4,7 @@ MVP journal application using TypeScript and Composables with reactive state and
 
 ## Online Demo
 
-- Check out a [ url demo ](<[https://www.codecademy.com/resources/docs](https://jm-typescript-journal-app.netlify.app/)>) hosted on netlify.
+- [Check out a url demo here](https://jm-typescript-journal-app.netlify.app/)
 
 ## Coding Installation
 
